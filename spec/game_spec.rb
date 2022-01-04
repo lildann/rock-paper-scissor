@@ -21,43 +21,43 @@ describe Game do
     it 'LOSE: rock vs. scissor' do 
       game = Game.new("scissor")
       allow(game).to receive(:opponent_input) { "rock" }
-      expect(game.result).to eq(:lose)
+      expect(game.result).to eq(:lost)
     end
 
     it 'WIN: rock vs. paper' do 
       game = Game.new("paper")
       allow(game).to receive(:opponent_input) { "rock" }
-      expect(game.result).to eq(:win)
+      expect(game.result).to eq(:won)
     end
 
     it 'WIN: scissor vs. rock' do 
       game = Game.new("rock")
       allow(game).to receive(:opponent_input) { "scissor" }
-      expect(game.result).to eq(:win)
+      expect(game.result).to eq(:won)
     end
 
     it 'LOSE: scissor vs. paper' do 
       game = Game.new("paper")
       allow(game).to receive(:opponent_input) { "scissor" }
-      expect(game.result).to eq(:lose)
+      expect(game.result).to eq(:lost)
     end
 
     it 'WIN: paper vs. scissor' do 
       game = Game.new("scissor")
       allow(game).to receive(:opponent_input) { "paper" }
-      expect(game.result).to eq(:win)
+      expect(game.result).to eq(:won)
     end
 
     it 'LOSE: paper vs. rock' do 
       game = Game.new("rock")
       allow(game).to receive(:opponent_input) { "paper" }
-      expect(game.result).to eq(:lose)
+      expect(game.result).to eq(:lost)
     end
 
     it 'DRAW: when it is a draw' do
       game = Game.new("rock")
       allow(game).to receive(:opponent_input) { "rock" }
-      expect(game.result).to eq(:draw)
+      expect(game.result).to eq(:drew)
     end
   end
 end

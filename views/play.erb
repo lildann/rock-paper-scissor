@@ -1,15 +1,17 @@
 <h3>rock paper scissor</h3>
 <form action='/input' method='post'>
-  <h4><%= @player_name.upcase %>, let's play:</h4>
-  <label for="rock">r  o  c  k</label>
-  <input id="rock" name="input" type="checkbox" value="rock">
-  <br>
-  <label for="paper">p  a  p  e  r</label>
-  <input id="paper" name="input" type="checkbox" value="paper">
-  <br>
-  <label for="scissor">s  c  i  s  s  o  r</label>
-  <input id="scissor" name="input" type="checkbox" value="scissor">
-  <br>
+  <fieldset>
+    <legend><strong><%= @player_name.upcase %></strong>, choose one of these options to play:</legend>
+      <input id="rock" name="input" type="checkbox" value="rock">
+      <label for="rock">r  o  c  k</label>
+      <br>
+      <input id="paper" name="input" type="checkbox" value="paper">
+      <label for="paper">p  a  p  e  r</label>
+      <br>
+      <input id="scissor" name="input" type="checkbox" value="scissor">
+      <label for="scissor">s  c  i  s  s  o  r</label>
+      <br>
+  </fieldset>
   <br>
   <input type="submit" value="did you win or lose?"/>
 </form>

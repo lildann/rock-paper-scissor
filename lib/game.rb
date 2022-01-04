@@ -20,14 +20,14 @@ class Game
     p @inputs
     player, opponent = @inputs
     case
-      when player == "rock" && opponent == "paper" then return :lose
-      when player == "scissor" && opponent == "paper" then return :win
-      when player == "scissor" && opponent == "rock" then return :lose
-      when player == "paper" && opponent == "rock" then return :win
-      when player == "paper"  && opponent == "scissor" then return :lose
-      when player == "rock" && opponent == "scissor" then return :win
+      when player == "rock" && opponent == "paper" then return :lost
+      when player == "scissor" && opponent == "paper" then return :won
+      when player == "scissor" && opponent == "rock" then return :lost
+      when player == "paper" && opponent == "rock" then return :won
+      when player == "paper"  && opponent == "scissor" then return :lost
+      when player == "rock" && opponent == "scissor" then return :won
       else
-        :draw
+        :drew
     end 
   end
 end
