@@ -2,19 +2,20 @@
 <h3>rock paper scissor</h3>
 <form action='/input' method='post'>
   <fieldset>
-    <legend><strong><%= @player_name.upcase %></strong>, choose one of these options to play:</legend>
+    <legend><strong><%= @player_name.upcase %></strong>, choose one of these options to play:</legend><br>
       <input id="rock" name="input" type="checkbox" value="rock">
-      <label for="rock">r  o  c  k</label>
+      <label for="rock" id="rock-label">r  o  c  k</label>
       <br>
       <input id="paper" name="input" type="checkbox" value="paper">
-      <label for="paper">p  a  p  e  r</label>
+      <label for="paper" id="paper-label">p  a  p  e  r</label>
       <br>
       <input id="scissor" name="input" type="checkbox" value="scissor">
-      <label for="scissor">s  c  i  s  s  o  r</label>
+      <label for="scissor"id="scissor-label">s  c  i  s  s  o  r</label>
+      <br>
       <br>
   </fieldset>
   <br>
-  <input type="submit" value="did you win or lose?"/>
+  <input id="submit" type="submit" value="did you win or lose?"/>
 </form>
 <br>
 

@@ -1,26 +1,50 @@
 
 * {
   font-family: "Press Start 2P", cursive;
+  background-color: #ffcc66;
 }
 
 #shapes-container {
   display: flex;
 }
+
+#paper-label:hover {
+  color: orangered; 
+  font-size: 15px;
+}
+
 #paper-shape {
   background-color: orangered;
   height: 75px;
   width: 50px;
 }
+
+#rock-label:hover {
+  color: blue; 
+  font-size: 15px;
+}
+
 #rock-shape {
   background-color: blue;
   height: 75px;
   width: 75px;
   border-radius: 50%;
 }
+
+#scissor-label:hover {
+  color: #ff00ff;
+  font-size: 15px;
+}
+
 #scissor-shape {
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 75px solid #ff00ff;
+}
+
+#submit {
+  padding: 10px;
+  margin: 0px;
 }
