@@ -1,4 +1,33 @@
-# RPS Challenge
+# Rock Paper Scissor Challenge
+
+Getting Started
+-----
+
+Clone this repository
+```
+$ git clone https://github.com/lildann/rock-paper-scissor.git
+$ cd rock-paper-scissor
+```
+
+Install Bundler
+```
+$ gem install bundler
+```
+
+Install all program dependencies
+```
+$ bundle install
+```
+
+Connect to server
+```
+$ rackup
+```
+
+Visit http://localhost:9292/ and play
+
+
+
 
 Plan
 ----
