@@ -1,5 +1,8 @@
 # Rock Paper Scissor Challenge
 
+![Game view](images/rock-paper-scissor.png)
+
+
 Getting Started
 -----
 
